@@ -1,4 +1,4 @@
-import jsonv
+from jsonv import jsonv
 
 
 def main():

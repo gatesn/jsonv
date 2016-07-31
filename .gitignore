@@ -1,0 +1,21 @@
+# general things to ignore
+build/
+env/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+
+# Generated ANTLR files
+antlr.jar
+jsonv/JSONv.tokens
+jsonv/JSONvLexer*
+jsonv/JSONvParser*
+jsonv/JSONvVisitor*
+
+# due to using tox and pytest
+.tox
+.cache
