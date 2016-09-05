@@ -1,4 +1,4 @@
 JSONv
 =======================
 
-To build, run make install build testpy
+To build, run ./setup.py install
