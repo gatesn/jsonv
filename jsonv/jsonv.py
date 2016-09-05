@@ -51,8 +51,7 @@ class JSONvPythonVisitor(antlr4.ParseTreeVisitor):
         return None
 
     def visitString(self, ctx):
-        # We strip the quotation  marks off beginning and end
-        return str(ctx.STRING())[1:-1]
+        return json.loads(str(ctx.STRING()))
 
     def visitNumber(self, ctx):
         num_str = str(ctx.NUMBER())
@@ -137,8 +136,7 @@ def dumps(jvo):
 
 def from_dict(d):
     """ Return a JSONv object from a Python dictionary """
-    # FIXME: we can do this without going via json...
-    return loads(json.dumps(d))
+    return JVDict(d)
 
 
 def loads(jsonv_str, bindings=None):
