@@ -36,3 +36,9 @@ class TestJsonV(unittest.TestCase):
         self.assertTrue(l.bound)
 
         self.assertEqual("[1, 2, \"r\"]", jsonv.dumps(l))
+
+    def test_string(self):
+        import json
+        j = json.loads('["\\"hello\\""]')
+        jv = jsonv.loads('["\\"hello\\""]')
+        self.assertEqual(j, jv)

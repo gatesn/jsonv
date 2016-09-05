@@ -42,16 +42,12 @@ value
    ;
 
 STRING
-   : '"' STRING_CHAR* '"'
+   : '"' (ESC | ~ ["\\])* '"'
    ;
 
 UNBOUND
    : [a-zA-Z] [a-zA-Z0-9]*
    ;
-
-fragment STRING_CHAR
-    : (ESC | ~ ["\\])
-    ;
 
 fragment ESC
    : '\\' (["\\/bfnrt] | UNICODE)
