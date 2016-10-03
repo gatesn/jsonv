@@ -131,7 +131,7 @@ def dumps(jvo):
     if isinstance(jvo, JVObject):
         return jvo._dumps()
     else:
-        return str(jvo)
+        return json.dumps(jvo)
 
 
 def from_dict(d):
