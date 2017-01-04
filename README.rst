@@ -1,7 +1,7 @@
 JSONv
 =====
 
-A toy project to help learn ANTLR JSONv is an extension to the JSON syntax which supports 'variables'.
+A toy project to help learn ANTLR. JSONv is an extension to the JSON syntax which supports 'variables'.
 
 Example
 -------
