@@ -7,6 +7,7 @@ Example
 -------
 
 .. code-block:: python
+
     from jsonv import jsonv
 
     jv = jsonv.loads('{"hello": [foo, bar]}')
@@ -23,4 +24,6 @@ Example
 Installing
 ----------
 
-`pip install .`
+.. code-block:: bash
+
+    pip install .
