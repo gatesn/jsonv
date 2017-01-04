@@ -88,7 +88,7 @@ setup(
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://bitbucket.org/process-monitor-3/jsonv',
+    url='https://github.com/gatesn/jsonv/edit/master/setup.py',
 
     # Author details
     author='Nicholas Gates',
